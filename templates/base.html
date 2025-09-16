@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Summarizer</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('extractive') }}">Extractive Summarization</a> |
+        <a href="{{ url_for('abstractive') }}">Abstractive Summarization</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Abstractive Summarization</h2>
+
+<form method="POST" action="{{ url_for('abstractive') }}">
+    <textarea name="text" rows="10" cols="80" placeholder="Paste your news article here...">{{ request.form.get('text', '') }}</textarea><br><br>
+    <button type="submit">Summarize</button>
+</form>
+
+{% if summary %}
+    <h3>Summary:</h3>
+    <p>{{ summary }}</p>
+{% endif %}
+
+{% endblock %}
