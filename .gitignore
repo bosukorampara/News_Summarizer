@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+
+# Data & models
+*.csv
+*.h5
+*.bin
+*.pt
+*.model
+*.pickle
+
+# Jupyter
+.ipynb_checkpoints/
